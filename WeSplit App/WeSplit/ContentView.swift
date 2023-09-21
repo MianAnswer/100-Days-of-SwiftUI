@@ -34,7 +34,7 @@ struct ContentView: View {
                         .focused($amountIsFocused)
                 } header: {
                     Text("Amount")
-                        .foregroundColor(.accentColor)
+                        .foregroundColor(.white)
                 }
 
                 Section {
@@ -54,21 +54,21 @@ struct ContentView: View {
                     .pickerStyle(.navigationLink)
                 } header: {
                     Text("Tip Percentage")
-                        .foregroundColor(.accentColor)
+                        .foregroundColor(.white)
                 }
 
                 Section {
                     Text(totalAmount, format: currencyFormat)
                 } header: {
                     Text("Total Amount")
-                        .foregroundColor(.accentColor)
+                        .foregroundColor(.white)
                 }
         
                 Section {
                     Text(totalPerPerson, format: currencyFormat)
                 } header: {
                     Text("Amount Per Person")
-                        .foregroundColor(.accentColor)
+                        .foregroundColor(.white)
                 }
             }
             .navigationTitle("WeSplit")
@@ -80,6 +80,8 @@ struct ContentView: View {
                     }
                 }
             }
+            .background(.green)
+            .scrollContentBackground(.hidden)
         }
     }
 }
